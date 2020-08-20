@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator with css and jQuery</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+<h1 style="text-align:center;">Calculator with css and jQuery</h1><br />
+<div class="main-div"> 
+<div class="calculator-display"> 
+<input  type="button" value="" />
+</div><br />
+<div class="cal-row"> 
+<input type="button" value="C" onclick="calClear();" class="cal-button" />
+<input type="button" value="+/-" class="cal-button" />
+<input type="button" onclick="insertNumber('%');" value="%" class="cal-button" />
+<input type="button" onclick="insertNumber('/');" value="/" class="cal-button" />
+</div><div class="cal-row"> 
+<input type="button" onclick="insertNumber(7);" value="7" class="cal-button" />
+<input type="button" onclick="insertNumber(8);" value="8" class="cal-button" />
+<input type="button" onclick="insertNumber(9);" value="9" class="cal-button" />
+<input type="button" onclick="insertNumber('*');" value="X" class="cal-button" />
+</div><div class="cal-row"> 
+<input type="button" onclick="insertNumber(4);" value="4" class="cal-button" />
+<input type="button" onclick="insertNumber(5);" value="5" class="cal-button" />
+<input type="button" onclick="insertNumber(6);" value="6" class="cal-button" />
+<input type="button" onclick="insertNumber('-');" value="-" class="cal-button" />
+</div><div class="cal-row"> 
+<input type="button" onclick="insertNumber(1);" value="1" class="cal-button" />
+<input type="button" onclick="insertNumber(2);" value="2" class="cal-button" />
+<input type="button" onclick="insertNumber(3);" value="3" class="cal-button" />
+<input type="button" onclick="insertNumber('+');" value="+" class="cal-button" />
+</div><div class="cal-row"> 
+<input type="button" onclick="insertNumber(0);" value="0" class="cal-button" />
+<input type="button" onclick="insertNumber('.');" value="." class="cal-button" />
+<input type="button" value="Del" onclick="calDelate();" class="cal-button" />
+<input type="button" value="=" onclick="calEquel();" class="cal-button" />
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</div>
+</body>
+</html>
